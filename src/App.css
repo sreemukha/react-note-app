@@ -57,3 +57,20 @@ body{
   margin-top: 1%;
   margin-bottom: 1%;
 }
+
+.footer-text{
+  display: block;
+  flex: 1 1 8%;
+  font-family: 'Mukta Mahee';
+  font-size: 1.1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #D7B3FF;
+  padding-top: 16px;
+  text-align: center;
+  align-content: center;
+}
+
+.heart{
+  color: red;
+
+}

@@ -15,7 +15,7 @@ class App extends Component {
     super(props);
     this.setNote = this.setNote.bind(this);
     this.removeNote = this.removeNote.bind(this);
-
+    this.me = "Sreemukha Taduru";
     this.app = firebase.initializeApp(db_config);
     this.database = this.app.database().ref().child('notes');
 
@@ -52,6 +52,12 @@ class App extends Component {
       })
   }
 
+  getCurrentYear(){
+    let d = new Date();
+    let y = d.getFullYear();
+    console.log(y);
+    return y;
+  }Hello
 
   setNote(note){
     //push note to notes array
@@ -83,6 +89,9 @@ class App extends Component {
               )
             })
           }
+        </div>
+        <div className = "footer-text">
+          Made with React & Firebase <span className="heart">&#10084;</span> - {this.me}
         </div>
       </div>
     );

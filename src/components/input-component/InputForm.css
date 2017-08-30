@@ -5,20 +5,23 @@
 .inputButton{
   border: none;
   margin: 0px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding: 8px 24px;
   font-size: 1.3em;
   font-family: 'Mukta Mahee';
   background-color: #A32D4F;
   color:#fff;
   transition: 0.5s ease-out;
+  outline-color: #A32D4F;
 }
 
 .inputButton:hover{
   background-color: #DE3D5C;
   color:#fff;
   transition: 0.5s ease-out;
+  outline: none;
+  outline-style: dotted;
 }
 
 .noteInput{
@@ -26,16 +29,17 @@
   min-width: 800px;
   font-size: 1.3em;
   padding-left: 20px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   font-family: 'Mukta Mahee';
-  background-color: rgba(35,50,64,0.9);
+  background-color: rgba(26,6,42,0.9);
   color: #fff;
   transition: 0.5s ease-out;
 }
 
 .noteInput:focus{
-  background-color: rgba(237,237,220,0.7);;
-  color: #111;
+  background-color: rgba(242,230,255,0.8);;
+  color: #000;
   transition: 0.5s ease-in;
+  outline: none;
 }
