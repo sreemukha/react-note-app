@@ -1,0 +1,40 @@
+.inputWrapper{
+  margin: auto;
+}
+
+.inputButton{
+  border: none;
+  margin: 0px;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  padding: 8px 24px;
+  font-size: 1.3em;
+  font-family: 'Mukta Mahee';
+  background-color: #019875;
+  color:#fff;
+  transition: 0.5s ease-out;
+}
+
+.inputButton:hover{
+  background-color: #02BA85;
+  color:#fff;
+  transition: 0.5s ease-out;
+}
+
+.noteInput{
+  width: 800px;
+  min-width: 800px;
+  font-size: 1.3em;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  font-family: 'Mukta Mahee';
+  background-color: #333;
+  color: #fff;
+  transition: 0.5s ease-out;
+}
+
+.noteInput:focus{
+  background-color: #E4F1FE;
+  color: #111;
+  transition: 0.5s ease-in;
+}
