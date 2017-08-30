@@ -5,6 +5,9 @@ html{
 body{
   width: 100%;
   min-height: 100%;
+  background: linear-gradient(-10deg, rgba(0, 0, 0, 0.2),rgba(0, 10, 100, 0.7)), url('./images/bg.png');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 *{
@@ -15,30 +18,30 @@ body{
   border: 0;
 }
 
-.notesWrapper{
+.container{
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   height: 100%
 }
 
-.notesHeader{
+.head-container{
   display: flex;
   flex: 1 1 12%;
   min-height: 2.5em;
   max-height: 2em;
   font-size: 3.2em;
-  color: #F4B350;
+  color: #C03355;
   font-family: 'Baloo Bhaijaan';
   text-align: center;
   align-content: center;
   padding: 20px 0px 20px 0px;
   margin-bottom: 6px;
-  background-color: #333;
+  background-color: rgba(0,0,0,0.3);
   display: block;
 }
 
-.notesBody{
+.notes-body-container{
   padding-top: 24px;
   display: flex;
   flex: 1 1 80%;
@@ -48,9 +51,9 @@ body{
   overflow: auto;
 }
 
-.notesFooter{
+.input-container{
   display: flex;
   flex: 1 1 8%;
-  background-color: #666;
-  color: white;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }

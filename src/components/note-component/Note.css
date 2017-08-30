@@ -6,6 +6,14 @@
   from { opacity: 1 } to { opacity: 0 }
 }
 
+
+.note-content{
+  position: absolute;
+  top: 30%;
+  float: left;
+  word-wrap: break-word;
+}
+
 .note{
   position: relative;
   padding: 10px 10px 38px 34px;
@@ -16,7 +24,7 @@
   font-family: 'Mukta Mahee';
   font-size: 1.4em;
   color: #222;
-  background-color: #eed;
+  background-color: rgba(237,237,220,0.7);
   border-radius: 3px;
   opacity: 1;
 }
@@ -30,15 +38,10 @@
   animation-duration: 0.5s;
 }
 
-.note-content{
-  position: absolute;
-  top: 30%;
-  float: left;
-  display: block;
-}
+
 
 .close-btn{
-  color: #AA9;
+  color: #555;
   font-weight: bold;
   padding-right: 10px;
   float: right;

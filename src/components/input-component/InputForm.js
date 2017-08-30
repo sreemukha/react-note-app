@@ -32,8 +32,8 @@ class Input extends Component{
 
   render(){
     return(
-      <div className = "inputWrapper">
-        <input className = "noteInput" placeholder = "What's on your mind" value = {this.state.newNoteContent} onChange = {this.inputHandler}/>
+      <div className = "input-form">
+        <input className = "noteInput" type = "text" placeholder = "What's on your mind" value = {this.state.newNoteContent} onChange = {this.inputHandler}/>
         <button className = "inputButton" onClick = {this.addNote}>Add Note</button>
       </div>
     )

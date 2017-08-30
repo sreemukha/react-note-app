@@ -55,6 +55,10 @@ class App extends Component {
 
   setNote(note){
     //push note to notes array
+    if(note==null||note==""){
+      alert("Note cannot be empty");
+      return;
+    }
     this.database.push().set({noteContent:note});
   }
 
@@ -64,11 +68,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className = "notesWrapper">
-        <div className = "notesHeader">
-          <div className = "header-content">Include Header Component here</div>
+      <div className = "container">
+        <div className = "head-container">
+          <div className = "header-content">Yet Another Notes App</div>
         </div>
-        <div className = "notesBody">
+        <div className = "input-container">
+          <Input setNote = {this.setNote}/>
+        </div>
+        <div className = "notes-body-container">
           {
             this.state.notes.map((note) =>{
               return(
@@ -77,10 +84,6 @@ class App extends Component {
             })
           }
         </div>
-        <div className = "notesFooter">
-          <Input setNote = {this.setNote}/>
-        </div>
-
       </div>
     );
   }
